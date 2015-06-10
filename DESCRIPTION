@@ -1,0 +1,9 @@
+Package: rWidgets
+Type: Package
+Title: A set of custom HTML widgets.
+Version: 0.8.1
+Date: 2015-06-10
+Author: Roc Alabern
+Maintainer: Roc Alabern <roc.alabern@gmail.com>
+Description: A set of custom HTML widgets: Graph, Graph in a Sankey style, Radar plot, ...
+License: GPLv2
