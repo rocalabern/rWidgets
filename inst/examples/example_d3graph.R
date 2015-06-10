@@ -1,10 +1,8 @@
 # install.packages("igraph")
 # install.packages("igraphdata")
+library(rWidgets)
 library(igraph)
-library(igraphdata)
-
-devtools::install_github("rocalabern/d3graph")
-library(d3graph)
+# library(igraphdata)
 
 source(paste0(path.package("rWidgets"),"/examples/karate.dump.data.R"))
 
