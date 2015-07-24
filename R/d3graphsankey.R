@@ -68,7 +68,7 @@ d3.graphSankey <- function(
 #'
 #' @export
 d3.graphSankeyOutput <- function(outputId, width = '100%', height = '400px'){
-  shinyWidgetOutput(outputId, 'd3graphsankey', width, height, package = 'd3graphsankey')
+  shinyWidgetOutput(outputId, 'd3graphsankey', width, height, package = 'rWidgets')
 }
 
 #' Widget render function for use in Shiny

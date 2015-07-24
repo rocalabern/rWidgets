@@ -46,7 +46,7 @@ d3.radarplot <- function(
 #'
 #' @export
 d3.radarplotOutput <- function(outputId, width = '100%', height = '400px'){
-  shinyWidgetOutput(outputId, 'd3radarplot', width, height, package = 'd3radarplot')
+  shinyWidgetOutput(outputId, 'd3radarplot', width, height, package = 'rWidgets')
 }
 
 #' Widget render function for use in Shiny
@@ -54,5 +54,5 @@ d3.radarplotOutput <- function(outputId, width = '100%', height = '400px'){
 #' @export
 renderD3.radarplot <- function(expr, env = parent.frame(), quoted = FALSE) {
   if (!quoted) { expr <- substitute(expr) } # force quoted
-  shinyRenderWidget(expr, radarWidgetOutput, env, quoted = TRUE)
+  shinyRenderWidget(expr, d3.radarplotOutput, env, quoted = TRUE)
 }

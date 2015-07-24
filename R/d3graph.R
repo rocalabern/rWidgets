@@ -109,7 +109,7 @@ d3.graph <- function(
 #'
 #' @export
 d3.graphOutput <- function(outputId, width = '100%', height = '400px'){
-  shinyWidgetOutput(outputId, 'd3graph', width, height, package = 'd3graph')
+  shinyWidgetOutput(outputId, 'd3graph', width, height, package = 'rWidgets')
 }
 
 #' Widget render function for use in Shiny
